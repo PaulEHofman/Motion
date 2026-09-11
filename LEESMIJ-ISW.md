@@ -32,11 +32,17 @@ Wil je helemaal geen offline gebruik en dus ook geen cache, haal dan in `index.h
 
 De verwijzing naar `scripts/motionticker.js?v2` is `?isw1` geworden, zodat browsers de gewijzigde versie zeker ophalen.
 
-### 4. Geen externe bestanden meer
+### 4. Alle bestanden in de hoofdmap
+
+In deze repository staat alles plat in de hoofdmap, zonder de submappen `scripts`, `css`, `fonts`, `img` en `videos` van het origineel. Dat kwam doordat de webupload van GitHub de mapstructuur niet meenam. In plaats van alles opnieuw te uploaden zijn de verwijzingen aangepast: `index.html`, `sw.js`, `motionticker.js` en `font-awesome.min.css` wijzen nu naar bestanden in dezelfde map.
+
+Functioneel maakt dat niets uit. Wil je later iets overnemen uit een nieuwe versie van het origineel, houd er dan rekening mee dat de paden daar wel submappen hebben.
+
+### 5. Geen externe bestanden meer
 
 De app haalde vijf dingen van cdnjs.cloudflare.com: jQuery 3.5.1, Chart.js 2.9.4, Papa Parse 5.3.0, Fabric 4.3.1 en Font Awesome 4.7.0. Blokkeert het schoolnetwerk cdnjs, dan laadt Fabric niet en reageert het canvas nergens meer op. Dat geeft precies het beeld "er gebeurt niets als ik klik".
 
-Die vijf staan nu in de map zelf, in `scripts/`, `css/` en `fonts/`, in exact dezelfde versies, opgehaald uit de officiële repositories op GitHub. `index.html` en `sw.js` wijzen ernaar. De app heeft nu geen enkele externe verbinding meer nodig.
+Die vijf staan nu in de repository zelf, in exact dezelfde versies, opgehaald uit de officiële repositories op GitHub. `index.html` en `sw.js` wijzen ernaar. De app heeft nu geen enkele externe verbinding meer nodig.
 
 ## Hosten
 

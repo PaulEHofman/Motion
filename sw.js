@@ -12,9 +12,9 @@
 //     hele installatie laat mislukken.
 //
 // Wil je helemaal geen offline gebruik, haal dan in index.html de regel met
-// scripts/registerSW.js weg. Dan is er geen service worker en dus ook geen cache.
+// registerSW.js weg. Dan is er geen service worker en dus ook geen cache.
 
-var CACHE_NAME = 'motionticker-isw-v1';
+var CACHE_NAME = 'motionticker-isw-v2';
 
 var urlsToCache = [
   './',
@@ -23,24 +23,24 @@ var urlsToCache = [
   'favicon.ico',
   'site.webmanifest',
   'sw.js',
-  'scripts/MediaInfo.js',
-  'scripts/MediaInfoWasm.wasm',
-  'scripts/motionticker.js',
-  'scripts/MediaInfo.js.mem',
-  'scripts/fabric-patch-arrow.js',
-  'scripts/registerSW.js',
-  'scripts/MediaInfoWasm.js',
-  'scripts/fabric-patch-touch.js',
-  'scripts/opencv.js',
-  'scripts/jquery.min.js',
-  'scripts/Chart.min.js',
-  'scripts/papaparse.min.js',
-  'scripts/fabric.min.js',
+  'MediaInfo.js',
+  'MediaInfoWasm.wasm',
+  'motionticker.js',
+  'MediaInfo.js.mem',
+  'fabric-patch-arrow.js',
+  'registerSW.js',
+  'MediaInfoWasm.js',
+  'fabric-patch-touch.js',
+  'opencv.js',
+  'jquery.min.js',
+  'Chart.min.js',
+  'papaparse.min.js',
+  'fabric.min.js',
   'apple-touch-icon.png',
   'android-chrome-192x192.png',
-  'css/font-awesome.min.css',
-  'fonts/fontawesome-webfont.woff',
-  'fonts/fontawesome-webfont.ttf',
+  'font-awesome.min.css',
+  'fontawesome-webfont.woff',
+  'fontawesome-webfont.ttf',
   'mstile-70x70.png'
 ];
 

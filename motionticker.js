@@ -43,7 +43,7 @@ SOFTWARE.
   let distanceInMeter;
   let originX, originY; // in pixels
   let videoRotation = 0; // in degrees
-  let demoLocation = "videos/demo_bounching_ball.mp4";
+  let demoLocation = "demo_bounching_ball.mp4";
   let videoFormat = "";
 
   // The raw data (all derived data is calculated on the fly)
@@ -238,9 +238,9 @@ SOFTWARE.
   let MediaInfoJs = document.createElement('script');
   if ('WebAssembly' in window && typeof Promise  !== 'undefined' && !iOS() ) {
     // Only browsers that support Wasm, Promise. iOS gives maximum stack size exceeded error
-    MediaInfoJs.src = "scripts/MediaInfoWasm.js";
+    MediaInfoJs.src = "MediaInfoWasm.js";
   } else {
-    MediaInfoJs.src = "scripts/MediaInfo.js";
+    MediaInfoJs.src = "MediaInfo.js";
   }
   document.body.appendChild(MediaInfoJs);
 
